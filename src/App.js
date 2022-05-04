@@ -14,7 +14,7 @@ import TechnicalSkills from './views/technical_skills';
 function App() {
   return (
     <div className="container-fluid mx-0 px-0">
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         {/* Navbar */}
         <NavBar />
         {/* Content */}
