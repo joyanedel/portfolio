@@ -7,7 +7,7 @@ const AboutMePage = () => {
             <div id="about-me" className='container' style={{'background': 'linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 85%)', 'borderRadius': '4rem'}}>
                 <div className='container p-5'>
                     <h1 className='titled'>Hi y'all</h1>
-                    <span className='description'>I'm Jesús Oyanedel, a chilean computer engineering and backend developer, that's what I like. If I don't have the stack you 're looking for i'm willing to learn the techs you really 
+                    <span className='description'>I'm Jesús Oyanedel, a chilean computer engineering and backend developer, that's what I like. If I don't have the stack you 're looking for i'm willing to learn the techs you really need
                     </span>
                 </div>
                 <div className='container p-5'>
