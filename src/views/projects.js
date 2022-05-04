@@ -2,7 +2,7 @@ import React from 'react';
 import renderCard from '../components/infocard';
 
 const externalProjects = [
-    {name: "Finteku", src: "icons/finteku.png", version: <a href="https://clu.finteku.com" target="_blank" rel="noopener noreferrer"> Site </a>, tools: ["Source Code not available for confidentiality", "Django", "Django Rest Framework"]},
+    {name: "Finteku Fintech", src: "icons/finteku.png", version: <a href="https://clu.finteku.com" target="_blank" rel="noopener noreferrer"> Site </a>, tools: ["Source Code not available for confidentiality", "Django", "Django Rest Framework"]},
     {name: "Feria de Software", version: <a href="https://joyanedel.github.io/fesw" target="_blank" rel="noopener noreferrer"> Site </a>, src: "icons/fesw.png", tools: [<a href="https://github.com/joyanedel/fesw" target="_blank" rel="noopener noreferrer"> Source Code </a>, "React"]},
     {name: "Go RPC", src: "icons/college.svg", version: "Site no available", tools: ["Go", "gRPC"]}
 ]
