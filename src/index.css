@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://images.pexels.com/photos/1723637/pexels-photo-1723637.jpeg?cs=srgb&dl=pexels-brakou-abdelghani-1723637.jpg&fm=jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.titled {
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  font-weight: 400;
+}

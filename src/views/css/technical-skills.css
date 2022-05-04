@@ -1,0 +1,12 @@
+#technical-skills > h2 {
+    color: white;
+}
+
+.info-card .card-img-top > img {
+    width: 25%;
+    transition: width 0.5s ease 0s;
+}
+
+.info-card:hover > .card-img-top > img {
+    width: 30%;
+}
