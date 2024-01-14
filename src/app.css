@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Geist";
+  font-weight: 900;
+  src: url("/fonts/Geist/Geist-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-weight: 700;
+  src: url("/fonts/Geist/Geist-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-weight: 500;
+  src: url("/fonts/Geist/Geist-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-weight: 400;
+  src: url("/fonts/Geist/Geist-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-weight: 300;
+  src: url("/fonts/Geist/Geist-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Geist";
+  font-weight: 100;
+  src: url("/fonts/Geist/Geist-Thin.woff2") format("woff2");
+}
+
+@layer base {
+  html {
+    font-family: 'Geist';
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+  }
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+    font-weight: 900;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 900;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+    font-weight: 900;
+  }
+
+  h6 {
+    font-size: 1rem;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  a {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  button {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  input {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  textarea {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+
+  select {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
