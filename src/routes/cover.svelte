@@ -18,13 +18,13 @@
 </script>
 
 <section
-	class="bg-gradient-to-b from-blue-950 to-purple-950 dark:bg-gray-900 dark:bg-none h-screen justify-center items-center flex flex-col"
+	class="bg-gradient-to-b from-blue-950 to-purple-950 dark:bg-gray-900 dark:bg-none min-h-screen justify-center items-center flex flex-col"
 	aria-label="cover"
 	id="cover"
 >
 	<NavBar />
 
-	<div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+	<div class="py-8 px-4 mx-auto text-center lg:py-16">
 		<h1
 			class="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-white"
 		>
