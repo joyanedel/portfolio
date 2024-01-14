@@ -17,7 +17,7 @@
 		<a
 			{href}
 			target="_blank"
-			class="absolute z-10 inline-flex items-center justify-center w-8 h-8 text-white rounded-full -left-4 ring-2 ring-white"
+			class="absolute z-10 inline-flex items-center justify-center w-8 h-8 text-white rounded-full -left-4 ring-2 ring-white dark:bg-gray-800"
 		>
 			<img
 				src={favicon_url}
@@ -31,7 +31,7 @@
 		<h4
 			class="flex flex-col items-start text-lg font-medium leading-8 lg:items-center md:flex-row text-slate-700"
 		>
-			<span class="flex-1">
+			<span class="flex-1 dark:text-slate-200">
 				{title} at <a {href} target="_blank" class="text-blue-500">{company}</a>
 			</span>
 		</h4>
@@ -39,7 +39,7 @@
 			{start_period} - {end_period}
 		</span>
 		<h6 class="text-sm font-normal text-slate-400">{type}</h6>
-		<p class="text-slate-500">{description}</p>
+		<p class="dark:text-slate-500">{description}</p>
 		<ul>
 			{#each tasks as task}
 				<JobTask {task} />

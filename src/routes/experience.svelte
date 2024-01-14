@@ -2,8 +2,12 @@
 	import JobItem from '../lib/components/JobItem.svelte';
 </script>
 
-<div aria-label="experience">
-	<h1>Work Experience</h1>
+<div
+	aria-label="experience"
+	id="experience"
+	class="bg-gradient-to-b dark:from-gray-900 dark:to-gray-700 p-4 w-full"
+>
+	<h1 class="dark:text-white">Work Experience</h1>
 	<ul
 		aria-label="Work Experience"
 		role="feed"

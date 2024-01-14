@@ -6,7 +6,7 @@
 
 <Cover />
 
-<section aria-label="content about me" class="flex flex-col items-start p-4" id="content">
+<section aria-label="content about me" class="flex flex-col items-start" id="content">
 	<Experience />
 	<Stack />
 </section>

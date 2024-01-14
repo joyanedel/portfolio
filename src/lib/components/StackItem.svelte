@@ -4,5 +4,5 @@
 
 <li class="flex flex-col items-center justify-center">
 	<slot />
-	<strong>{title}</strong>
+	<strong class="dark:text-slate-200">{title}</strong>
 </li>
