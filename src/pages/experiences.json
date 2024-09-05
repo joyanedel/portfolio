@@ -1,0 +1,54 @@
+[
+  {
+    "company": "Unholster",
+    "location": "Santiago, Chile",
+    "position": "Software Engineer",
+    "duration": "2023 - Present",
+    "description": [
+      "Developed and maintained the company's main product, a CMS for creating mobile apps.",
+      "Developed a new feature that allows users to create custom templates for their apps.",
+      "Developed a new feature that allows users to create custom plugins for their apps.",
+      "Developed a new feature that allows users to create custom themes for their apps.",
+      "Developed a new feature that allows users to create custom widgets for their apps."
+    ]
+  },
+  {
+    "company": "Quantsoft",
+    "location": "Viña del Mar, Chile",
+    "position": "Software Engineer",
+    "duration": "2023",
+    "description": [
+      "Developed and maintained the company's main product, a CMS for creating mobile apps.",
+      "Developed a new feature that allows users to create custom templates for their apps.",
+      "Developed a new feature that allows users to create custom plugins for their apps.",
+      "Developed a new feature that allows users to create custom themes for their apps.",
+      "Developed a new feature that allows users to create custom widgets for their apps."
+    ]
+  },
+  {
+    "company": "MyFutureAI",
+    "location": "Santiago, Chile",
+    "position": "Backend Developer",
+    "duration": "2022 - 2023",
+    "description": [
+      "Developed and maintained the company's main product, a CMS for creating mobile apps.",
+      "Developed a new feature that allows users to create custom templates for their apps.",
+      "Developed a new feature that allows users to create custom plugins for their apps.",
+      "Developed a new feature that allows users to create custom themes for their apps.",
+      "Developed a new feature that allows users to create custom widgets for their apps."
+    ]
+  },
+  {
+    "company": "Unitti",
+    "location": "Santiago, Chile",
+    "position": "Fullstack Developer",
+    "duration": "2021 - 2023",
+    "description": [
+      "Developed and maintained the company's main product, a CMS for creating mobile apps.",
+      "Developed a new feature that allows users to create custom templates for their apps.",
+      "Developed a new feature that allows users to create custom plugins for their apps.",
+      "Developed a new feature that allows users to create custom themes for their apps.",
+      "Developed a new feature that allows users to create custom widgets for their apps."
+    ]
+  }
+]
