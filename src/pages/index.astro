@@ -1,20 +1,63 @@
 ---
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import BaseHead from "../components/BaseHead.astro"
+import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
+import CopyButton from "./copy_button"
+
+let emailWasCopied = false
+
+function copyEmail() {
+  // get the email input
+  const email = document.getElementById("email") as HTMLInputElement
+  navigator.clipboard.writeText(email.value)
+  emailWasCopied = true
+  setTimeout(() => {
+    emailWasCopied = false
+  }, 2000)
+}
 ---
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<BaseHead title="Jesús Resume" description="My portfolio" />
-	</head>
-	<body>
-		<Header />
-		<main>
-		</main>
+  <head>
+    <BaseHead title="Jesús Resume" description="My portfolio" />
+  </head>
+  <body class="flex flex-col h-screen">
+    <Header />
+    <main class="flex flex-col grow">
+      <section aria-label="Who I am" class="flex flex-col grow">
+        <h1>I am Jesús Oyanedel</h1>
+        <span>(xe'sus)</span>
+        <h2>Software Engineer</h2>
 
+        <p>
+          Developer, cat lover, and a music enthusiast. If you are looking for a
+          nice person to work with, you are in the right place. I love develop
+          software that helps people to improve their lives but if i'm not
+          coding, you can find me playing guitar, playing with my cats, riding
+          or just skating.
+        </p>
+
+        <div>
+          <h2>Get in touch</h2>
+          <div>
+            <input
+              type="text"
+              id="email"
+              type="email"
+              value="iamjoyanedel@gmail.com"
+              disabled
+              class="rounded-xl bg-transparent text-gray-300"
+            />
+            <CopyButton email="iamjoyanedel@gmail.com" client:load />
+          </div>
+        </div>
+      </section>
+      <section aria-label="Experience"></section>
+      <section aria-label="Projects"></section>
+    </main>
     <Footer />
-
-	</body>
+  </body>
 </html>
+
+<script></script>

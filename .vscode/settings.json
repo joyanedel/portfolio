@@ -5,8 +5,8 @@
         "editor.indentSize": "tabSize",
         "editor.tabSize": 2
     },
-    "[svelte]": {
-        "editor.defaultFormatter": "svelte.svelte-vscode",
+    "[astro]": {
+        "editor.defaultFormatter": "astro-build.astro-vscode",
         "editor.formatOnSave": true,
         "editor.indentSize": "tabSize",
         "editor.tabSize": 2
