@@ -5,11 +5,11 @@
     "position": "Software Engineer",
     "duration": "2023 - Present",
     "description": [
-      "Developed and maintained the company's main product, a CMS for creating mobile apps.",
-      "Developed a new feature that allows users to create custom templates for their apps.",
-      "Developed a new feature that allows users to create custom plugins for their apps.",
-      "Developed a new feature that allows users to create custom themes for their apps.",
-      "Developed a new feature that allows users to create custom widgets for their apps."
+      "Built in-house libraries to improve the development process.",
+      "Developed an optimization model for medical clinians - clinics assignment around US.",
+      "Developed self-scheduling system for medical appointments orchestrating real-time availability of clinicians, clinics and rooms",
+      "Built map based dsl for creating plotting data custom map.s",
+      "Developed event-driven onboarding system for new clients reducing people's time, data redundancy and consistency."
     ]
   },
   {
@@ -18,11 +18,9 @@
     "position": "Software Engineer",
     "duration": "2023",
     "description": [
-      "Developed and maintained the company's main product, a CMS for creating mobile apps.",
-      "Developed a new feature that allows users to create custom templates for their apps.",
-      "Developed a new feature that allows users to create custom plugins for their apps.",
-      "Developed a new feature that allows users to create custom themes for their apps.",
-      "Developed a new feature that allows users to create custom widgets for their apps."
+      "Built monitoring system for company active services.",
+      "Apply backtesting strategies for trading algorithms.",
+      "Automate setup and teardown of company services."
     ]
   },
   {
@@ -31,11 +29,8 @@
     "position": "Backend Developer",
     "duration": "2022 - 2023",
     "description": [
-      "Developed and maintained the company's main product, a CMS for creating mobile apps.",
-      "Developed a new feature that allows users to create custom templates for their apps.",
-      "Developed a new feature that allows users to create custom plugins for their apps.",
-      "Developed a new feature that allows users to create custom themes for their apps.",
-      "Developed a new feature that allows users to create custom widgets for their apps."
+      "Developed targeted email marketing campaign system for clients.",
+      "Integrated machine learning models in products."
     ]
   },
   {
@@ -44,11 +39,8 @@
     "position": "Fullstack Developer",
     "duration": "2021 - 2023",
     "description": [
-      "Developed and maintained the company's main product, a CMS for creating mobile apps.",
-      "Developed a new feature that allows users to create custom templates for their apps.",
-      "Developed a new feature that allows users to create custom plugins for their apps.",
-      "Developed a new feature that allows users to create custom themes for their apps.",
-      "Developed a new feature that allows users to create custom widgets for their apps."
+      "Developed invoices trading platform.",
+      "Developed mobile application for the invoices trading platform."
     ]
   }
 ]
