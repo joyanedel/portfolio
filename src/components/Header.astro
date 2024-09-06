@@ -2,10 +2,11 @@
 import HeaderLink from "./HeaderLink.astro"
 ---
 
-<header class="fixed w-full bg-white">
+<header class="sticky top-0 left-0 right-0 w-full bg-white">
   <nav class="grid grid-cols-3 h-12">
-    <div class="flex flex-row justify-center items-center col-start-2">
+    <div class="flex flex-row justify-center items-center col-start-2 gap-4">
       <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/projects">Projects</HeaderLink>
     </div>
   </nav>
 </header>

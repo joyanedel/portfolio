@@ -1,84 +1,69 @@
 ---
-import BaseHead from "../components/BaseHead.astro"
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
 import CopyButton from "./copy_button"
 import experiences from "./experiences.json"
+import BaseLayout from "../layouts/BaseLayout.astro"
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <BaseHead title="Jesús Resume" description="My portfolio" />
-  </head>
-  <body class="flex flex-col h-screen relative">
-    <Header />
-    <main class="flex flex-col grow px-4">
-      <section
-        aria-label="Who I am"
-        class="flex flex-col grow items-center justify-center min-h-screen"
-      >
-        <h1 class="text-4xl">Jesús Oyanedel</h1>
-        <span>(xe'sus)</span>
+<BaseLayout title="Jesús Resume" description="My portfolio">
+  <section
+    aria-label="Who I am"
+    class="flex flex-col grow items-center justify-center min-h-screen"
+  >
+    <h1 class="text-4xl">Jesús Oyanedel</h1>
+    <span>(xe'sus)</span>
 
-        <h2 class="mt-4 text-2xl">Software Engineer</h2>
+    <h2 class="mt-4 text-2xl">Software Engineer</h2>
 
-        <p class="text-md px-16">
-          Developer, cat lover, and a music enthusiast. If you are looking for a
-          nice person to work with, you are in the right place. I love develop
-          software that helps people to improve their lives but if i'm not
-          coding, you can find me playing guitar, playing with my cat, riding or
-          just skating.
-        </p>
+    <p class="text-md px-16">
+      Developer, cat lover, and a music enthusiast. If you are looking for a
+      nice person to work with, you are in the right place. I love develop
+      software that helps people to improve their lives but if i'm not coding,
+      you can find me playing guitar, playing with my cat, riding or just
+      skating.
+    </p>
 
-        <div class="p-20 flex flex-col items-center justify-start gap-2">
-          <h2>Get in touch</h2>
-          <div class="flex items-center gap-4">
-            <input
-              type="text"
-              id="email"
-              type="email"
-              value="iamjoyanedel@gmail.com"
-              disabled
-              class="rounded-xl bg-transparent text-gray-300 w-48"
-            />
-            <CopyButton email="iamjoyanedel@gmail.com" client:load />
-          </div>
-        </div>
-      </section>
-      <section
-        aria-label="Experience"
-        class="flex flex-col justify-start items-start px-16"
-      >
-        <h1 class="text-4xl pb-8">Experience</h1>
-        <div>
-          <ul class="gap-4 flex flex-col">
-            {
-              experiences.map((experience) => (
-                <li>
-                  <h2>
-                    <strong>{experience.company}</strong> |{" "}
-                    {experience.position}
-                  </h2>
-                  <span class="text-gray-500">{experience.duration}</span>
+    <div class="p-20 flex flex-col items-center justify-start gap-2">
+      <h2>Get in touch</h2>
+      <div class="flex items-center gap-4">
+        <input
+          type="text"
+          id="email"
+          type="email"
+          value="iamjoyanedel@gmail.com"
+          disabled
+          class="rounded-xl bg-transparent text-gray-300 w-48"
+        />
+        <CopyButton email="iamjoyanedel@gmail.com" client:load />
+      </div>
+    </div>
+  </section>
+  <section
+    aria-label="Experience"
+    class="flex flex-col justify-start items-start px-16"
+  >
+    <h1 class="text-4xl pb-8">Experience</h1>
+    <div>
+      <ul class="gap-4 flex flex-col">
+        {
+          experiences.map((experience) => (
+            <li>
+              <h2>
+                <strong>{experience.company}</strong> | {experience.position}
+              </h2>
+              <span class="text-gray-500">{experience.duration}</span>
 
-                  <ul class="list-disc list-inside">
-                    {experience.description.map((achivement) => (
-                      <li class="list-item">
-                        <span>{achivement}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))
-            }
-          </ul>
-        </div>
-        <section aria-label="Projects"></section>
-      </section>
-      <Footer />
-    </main>
-  </body>
-</html>
-
-<script></script>
+              <ul class="list-disc list-inside">
+                {experience.description.map((achivement) => (
+                  <li class="list-item">
+                    <span>{achivement}</span>
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    <section aria-label="Projects"></section>
+  </section>
+</BaseLayout>
