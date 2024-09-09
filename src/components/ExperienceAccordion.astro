@@ -15,7 +15,7 @@ const { company, position, duration } = Astro.props
   <header>
     <button
       type="button"
-      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-600 dark:border-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 gap-3"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 dark:border-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 gap-3"
       aria-expanded="true"
     >
       <section aria-label="Role information" class="flex flex-col items-start">
@@ -53,9 +53,9 @@ const { company, position, duration } = Astro.props
     }
 
     toggleAccordion() {
-      const button = this.querySelector("button")
-      const content = this.querySelector("div")
-      const icon = button.querySelector("[data-accordion-icon]")
+      const button = this.querySelector("button")!
+      const content = this.querySelector("div")!
+      const icon = button.querySelector("[data-accordion-icon]")!
 
       button.setAttribute(
         "aria-expanded",
