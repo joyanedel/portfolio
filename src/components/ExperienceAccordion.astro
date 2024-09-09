@@ -1,0 +1,74 @@
+---
+interface Props {
+  company: string
+  position: string
+  duration: string
+}
+const { company, position, duration } = Astro.props
+---
+
+<experience-accordion
+  data-company={company}
+  data-position={position}
+  data-duration={duration}
+>
+  <header>
+    <button
+      type="button"
+      class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 rounded-t-xl focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-600 dark:border-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-600 gap-3"
+      aria-expanded="true"
+    >
+      <section aria-label="Role information" class="flex flex-col items-start">
+        <h2>
+          <strong>{company}</strong> | {position}
+        </h2>
+        <span class="text-gray-500">{duration}</span>
+      </section>
+      <svg
+        data-accordion-icon
+        class="w-3 h-3 rotate-180 shrink-0"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 10 6"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5 5 1 1 5"></path>
+      </svg>
+    </button>
+  </header>
+  <div class="hidden">
+    <slot />
+  </div>
+</experience-accordion>
+
+<script>
+  class ExperienceAccordion extends HTMLElement {
+    connectedCallback() {
+      this.addEventListener("click", this.toggleAccordion)
+    }
+
+    toggleAccordion() {
+      const button = this.querySelector("button")
+      const content = this.querySelector("div")
+      const icon = button.querySelector("[data-accordion-icon]")
+
+      button.setAttribute(
+        "aria-expanded",
+        button.getAttribute("aria-expanded") === "true" ? "false" : "true"
+      )
+      content.classList.toggle("hidden")
+      icon.classList.toggle("rotate-180")
+    }
+
+    disconnectedCallback() {
+      this.removeEventListener("click", this.toggleAccordion)
+    }
+  }
+
+  customElements.define("experience-accordion", ExperienceAccordion)
+</script>
