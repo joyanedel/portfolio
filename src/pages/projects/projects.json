@@ -1,12 +1,14 @@
 [
   {
     "name": "Rust Decouple",
-    "description": "Bla bla bla",
-    "repository": "https://github.com/joyanedel/rust-decouple"
+    "description": "Rust crate for environment variables safe parsing",
+    "repository": "https://github.com/joyanedel/rust-decouple",
+    "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Rust_programming_language_black_logo.svg/800px-Rust_programming_language_black_logo.svg.png"
   },
   {
     "name": "MoncliType",
-    "description": "Bla bla bla",
-    "repository": "https://github.com/joyanedel/monclitype"
+    "description": "MonkeyType in your terminal",
+    "repository": "https://github.com/joyanedel/monclitype",
+    "img": "https://typingstats.com/partners/monkeytype.png"
   }
 ]

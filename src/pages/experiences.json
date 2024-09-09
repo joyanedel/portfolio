@@ -7,8 +7,8 @@
     "description": [
       "Built in-house libraries to improve the development process.",
       "Developed an optimization model for medical clinians - clinics assignment around US.",
-      "Developed self-scheduling system for medical appointments orchestrating real-time availability of clinicians, clinics and rooms",
-      "Built map based dsl for creating plotting data custom map.s",
+      "Developed self-scheduling system for medical appointments orchestrating real-time availability of clinicians, clinics and rooms.",
+      "Built map based DSL for data plotting in maps.",
       "Developed event-driven onboarding system for new clients reducing people's time, data redundancy and consistency."
     ]
   },
